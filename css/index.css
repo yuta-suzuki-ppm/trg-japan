@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
 body {
+    padding-top: 70px;
+    z-index: 1;
     background-color: #FFF8DB;
     font-family: '小塚ゴシック Pro', 'Kozuka Gothic Pro', sans-serif;
     letter-spacing: 3px;
+}
+
+.my_shadow {
+    box-shadow: 5px 5px 1px #888888;
 }
 
 .pc {
@@ -22,6 +28,15 @@ body {
 
 header {
     background-color: #FED406;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    /* ウィンドウを基準に画面に固定 */
+    top: 0;
+    /* 上下の固定位置を上から0pxにする */
+    left: 0;
+    /* 左右の固定位置を左から0pxにする */
+    z-index: 2;
 }
 
 .my_nav_logo {
@@ -32,7 +47,7 @@ header {
 
 @media(max-width: 991px) {
     .my_nav_logo {
-        background-image: url(../img/sp_logo.png);
+        background-image: url(../img/sp_logo.svg);
         background-repeat: no-repeat;
         background-position: center;
         width: 50px !important;
@@ -77,26 +92,6 @@ header {
     display: block;
     width: 95%;
     object-fit: cover;
-}
-
-.h_blue {
-    background-image: url(../img/h_blue_bg.png);
-    background-position: center;
-}
-
-.h_blue p {
-    font-size: 16px;
-    font-weight: 600;
-    padding-top: 35px;
-    margin-bottom: 0px;
-    color: white;
-}
-
-.h_blue h2 {
-    font-size: 40px;
-    font-weight: 600;
-    padding-bottom: 60px;
-    color: white;
 }
 
 /* Q&A */
