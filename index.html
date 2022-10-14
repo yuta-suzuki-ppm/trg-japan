@@ -274,28 +274,27 @@
 
             <div class="mb-3">
               <label for="name" class="form-label">担当者名<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <input type="name" class="form-control" id="name">
+              <input type="text" name="name" class="form-control" id="name">
             </div>
 
             <div class="mb-3">
               <label for="company" class="form-label">法人名<img class="ms-3" src="img/任意.png" alt="任意"></label>
-              <input type="name" class="form-control" id="company">
+              <input type="text" name="name" class="form-control" id="company">
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">メールアドレス<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <input type="email" class="form-control" id="email">
+              <input type="email" name="email" class="form-control" id="email">
             </div>
 
             <div class="mb-3">
-              <label for="number" class="form-label">電話番号<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <input type="number" class="form-control" id="number">
+              <label for="phone" class="form-label">電話番号<img class="ms-3" src="img/必須.png" alt="必須"></label>
+              <input type="tel" name="phone" class="form-control" id="phone">
             </div>
 
             <div class="mb-3">
               <label for="input" class="form-label">お問い合わせ内容<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <select id="input" class="form-select" aria-label="Default select example">
-
+              <select id="input" name="subject" class="form-select" aria-label="Default select example">
                 <option selected>選択してください</option>
                 <option value="1">資料請求</option>
                 <option value="2">料金について</option>
@@ -305,7 +304,7 @@
 
             <div class="mb-3">
               <label for="text" class="form-label">その他、ご質問等<img class="ms-3" src="img/任意.png" alt="任意"></label>
-              <textarea class="form-control" id="text" rows="5"></textarea>
+              <textarea name="message" class="form-control" id="text" rows="5"></textarea>
             </div>
 
             <input class="btn btn-light d-block mx-auto p-0" type="image" value="Submit" src="img/send_btn.png"
