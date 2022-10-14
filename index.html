@@ -260,7 +260,18 @@
 
         <div class="col-lg-8 mx-auto">
 
-          <form action="info@dezapato.jp" method="post">
+          <form action="https://api.staticforms.xyz/submit" method="post">
+
+            <input type="text" name="honeypot" style="display:none">
+            <!-- STATIC FORMSのアクセスキー -->
+            <input type="hidden" name="accessKey" value="71a102ff-2b72-491a-a1cc-498e7e814bf8">
+            <!--メールのタイトル-->
+            <input type="hidden" name="subject" value="LPよりお問い合わせがありました" />
+            <!--送信先のメールアドレスをvalueに設定する-->
+            <input type="hidden" name="replyTo" value="info@dezapato.jp">
+            <!--redirectToのURLは公開後のURLへリンクする-->
+            <input type="hidden" name="redirectTo" value="">
+            <input type="submit" value="Submit" />
 
             <div class="mb-3">
               <label for="name" class="form-label">担当者名<img class="ms-3" src="img/必須.png" alt="必須"></label>
