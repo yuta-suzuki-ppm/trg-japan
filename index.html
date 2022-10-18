@@ -260,57 +260,51 @@
 
         <div class="col-lg-8 mx-auto">
 
-          <form action="https://api.staticforms.xyz/submit" method="post">
-
-            <input type="text" name="honeypot" style="display:none">
-            <!-- STATIC FORMSのアクセスキー -->
-            <input type="hidden" name="accessKey" value="71a102ff-2b72-491a-a1cc-498e7e814bf8">
-            <!--メールのタイトル-->
-            <input type="hidden" name="subject" value="LPよりお問い合わせがありました" />
-            <!--送信先のメールアドレスをvalueに設定する-->
-            <input type="hidden" name="replyTo" value="info@dezapato.jp">
-            <!--redirectToのURLは公開後のURLへリンクする-->
-            <input type="hidden" name="redirectTo" value="">
+          <form action="https://ssl.form-mailer.jp/fm/service/Forms/confirm" method="post" name="form1"
+            ENCTYPE="multipart/form-data" accept-charset="UTF-8">
+            <input type="hidden" name="key" value="5c68c294762477">
 
             <div class="mb-3">
               <label for="name" class="form-label">担当者名<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <input type="text" name="name" class="form-control" id="name">
+              <input name="field_6613292" type="text" class="form-control" id="name">
             </div>
 
             <div class="mb-3">
               <label for="company" class="form-label">法人名<img class="ms-3" src="img/任意.png" alt="任意"></label>
-              <input type="text" name="name" class="form-control" id="company">
+              <input type="text" name="field_6613294" class="form-control" id="company">
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">メールアドレス<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <input type="email" name="email" class="form-control" id="email">
+              <input type="email" name="field_6613285" class="form-control" id="email">
             </div>
 
             <div class="mb-3">
               <label for="phone" class="form-label">電話番号<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <input type="tel" name="phone" class="form-control" id="phone">
+              <input type="tel" name="field_6613289" class="form-control" id="phone">
             </div>
 
             <div class="mb-3">
               <label for="input" class="form-label">お問い合わせ内容<img class="ms-3" src="img/必須.png" alt="必須"></label>
-              <select id="input" name="subject" class="form-select" aria-label="Default select example">
-                <option selected>選択してください</option>
-                <option value="1">資料請求</option>
-                <option value="2">料金について</option>
-                <option value="3">その他</option>
+              <select id="input" name="field_6613295" class="form-select" aria-label="Default select example">
+                <option value="">選択してください</option>
+                <option value="0">資料請求</option>
+                <option value="1">料金について</option>
+                <option value="2">その他</option>
               </select>
             </div>
 
             <div class="mb-3">
               <label for="text" class="form-label">その他、ご質問等<img class="ms-3" src="img/任意.png" alt="任意"></label>
-              <textarea name="message" class="form-control" id="text" rows="5"></textarea>
+              <textarea name="field_6613296" class="form-control" id="text" rows="5"></textarea>
             </div>
 
-            <input class="btn btn-light d-block mx-auto p-0" type="image" value="Submit" src="img/send_btn.png"
-              alt="送信">
+            <input class="btn btn-light d-block mx-auto p-0" name="submit" type="image" src="img/send_btn.png"
+              value="確認画面へ">
 
+            <input type="hidden" name="code" value="utf8">
           </form>
+
 
         </div>
 
